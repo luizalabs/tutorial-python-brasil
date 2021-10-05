@@ -4,9 +4,9 @@
   <img style="float: right;" src="imgs/projeto.png" alt="Homem a frente de website de compras com caixas ao lado"/>
 </p>
 
-> ⚠️ O sistema desenvolvido é apenas para fins de treinamento e desenvolvimento das técnicas apresentadas.
+> ⚠️ O sistema desenvolvido é apenas para fins de treinamento e desenvolvimento das técnicas apresentadas. Aprenda as técnicas e certifique-se que são adequadas para o seu sistema.
 
-## 📚 O que será desenvolvido?
+## 🛍️ O que será desenvolvido?
 
 Será desenvolvido uma sistema com objetivo de obter informações a respeito de pedidos.
 
@@ -34,6 +34,6 @@ Este sistema deve seguir as seguintes regras:
 
 :fearful: E agora, o que fazer? Por onde começo? Vamos escolher nossas ferramentas!
 
-[🧰 Escolhendo as melhores ferramentas](ferramentas.md)
+[Escolhendo as melhores ferramentas ➡️](ferramentas.md)
 
 [↩️ Voltar ao README ](README.md)
