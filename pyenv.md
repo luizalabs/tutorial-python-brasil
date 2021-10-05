@@ -43,7 +43,33 @@ A saída deverá ser similar a apresentada abaixo:
 pyenv 2.0.7-32-gc81a2810
 ```
 
-Para um guia completos de comandos do pyenv, acesse:
-
-
 #### Como usar?
+
+> ℹ️ É recomendado antes de instalar uma versão que se instale as dependências do python de acordo com o sistema operacional
+> https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+
+Para instalar uma versão específica do python basta digitar:
+
+```
+pyenv install <versão>
+```
+
+Para definir aquela versão como padrão basta digitar:
+
+```
+pyenv global <versão>
+```
+
+ou caso queira definir somente para um projeto:
+
+```
+pyenv local <versão>
+```
+
+Para verificar as versões instaladas:
+
+```
+pyenv versions
+```
+
+[↩️ Voltar](ferramentas.md)
