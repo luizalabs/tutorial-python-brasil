@@ -1,4 +1,4 @@
-# 🦬 Construindo API's robustas utilizando Python
+# 🐂 Construindo API's robustas utilizando Python
 
 <p align="center">
   <img style="float: right;" src="imgs/lu.png" alt="Lu do Magalu em um computador"/>
