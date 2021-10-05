@@ -100,6 +100,37 @@ A saída deverá ser similar a apresentada abaixo:
 Poetry version 1.1.11
 ```
 
+### :octocat: Git
+
+[Git](https://git-scm.com/) é um controle de versão livre e de código aberto, construido para lidar com projetos pequenos e grandes de maneira rápida e eficiente.
+
+**Para que serve?**
+
+Com certeza você já escreveu um arquivo, mais tarde trocou algumas coisas e e no fim salvou com o nome `versao_final.doc`. Mais tarde ou no outro dia você decide fazer mais mudanças e chama de `agoravai.doc` e quando menos percebe já tem um monte de arquivos e talvez nem se lembre mais qual a ultima versão.
+
+É para gerenciar alterações feitas no projeto durante o tempo que serve esta ferramenta. Durante o curso vamos salvando cada progresso feito sem precisar de ter várias cópias do mesmo arquivo.
+
+**Como instalar**
+
+É possivel encontrar instruções de instalação para cada um dos sistemas operacionais mais utilizados:
+
+[Mac](https://git-scm.com/download/mac)
+
+[Linux](https://git-scm.com/download/linux)
+
+[Windows](https://git-scm.com/download/windows)
+
+**Vamos verificar se deu tudo certo?**
+
+Abra um terminal e digite `git --version`.
+
+A saída deverá ser similar a apresentada abaixo:
+
+```bash
+$ git --version
+git version 2.33.0
+```
+
 ### ⌨️ VS Code
 
 #### O que é?
