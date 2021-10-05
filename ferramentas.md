@@ -42,7 +42,9 @@ Para usuários de Mac ou Windows vocês podem seguir os seguintes tutoriais resp
 
 Abra um terminal e digite:
 
-`python --version`
+```
+python --version
+```
 
 A saída deverá ser similar a apresentada abaixo:
 
@@ -110,7 +112,7 @@ O _plugin_ de Python para VSCode fornece _auto-complete_ , integração com os _
 
 #### Como instalar?
 
-O VS Code pode ser baixado no site oficial [here](https://code.visualstudio.com/download).
+O VS Code pode ser baixado no site oficial [aqui](https://code.visualstudio.com/download).
 
 A instalação do _ plugin_ de Python pode ser feita através da marketplace ou através dos comandos abaixo: 
 
