@@ -255,7 +255,7 @@ def test_quando_verificar_integridade_deve_conter_informacoes():
 
 Os testes estão funcionando? Parabéns! 👏👏 👏 Agora vamos refatorar o código.
 
-## 🪄 Refatorando o código
+## 🧙 Refatorando o código
 
 Se reparar bem, estamos repetindo a seguinte linha de código três vezes.
 
