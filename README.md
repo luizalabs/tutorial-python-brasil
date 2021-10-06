@@ -32,3 +32,5 @@ Vamos tentar nos preparar para situações ruins que possam acontecer e garantir
 1. [🧰 Escolhendo as melhores ferramentas](ferramentas.md)
 
 1. [📐 Iniciando o projeto](projeto.md)
+
+1. [👋 Olá API](hello_api.md)
