@@ -45,7 +45,7 @@ $ git config --local user.name USUARIO
 
 Navegue até o diretório onde foi executado o comando de `clone` do projeto. Prossiga com a instalação das bibliotecas que serão utilizadas no projeto.
 
-## Iniciando um projeto Python
+## 📏 Iniciando um projeto Python
 
 Agora com o repositório criado, vamos começar a criar um projeto Python.
 
@@ -69,7 +69,7 @@ Chegou a hora de instalar algumas bibliotecas e utilitários que nos auxiliarão
 > Como estamos utilizando o poetry, todas as bibliotecas serão instaladas em um ambiente virtual isolado, exclusivo para este projeto. Na primeira vez que o comando add for utilizado, o ambiente virtual será criado.
 > Veja mais detalhes sobre ambientes virtuais [aqui](ambientes_virtuais.md).
 
-### :zap: FastAPI
+### ⚡ FastAPI
 
 #### O que é?
 
@@ -202,7 +202,7 @@ A saída deve ser similar a:
 pytest 6.2.5
 ```
 
-## Salvando o momento atual do nosso projeto
+## 💾 Salvando o momento atual do nosso projeto
 
 Neste momento seu diretório deve estar assim:
 
@@ -233,9 +233,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Vemos dois arquivos não rastreados, precisamos avisar ao controle de versão que monitore estes arquivos.
 
-`$ git add pyproject.toml poetry.lock`
+`git add pyproject.toml poetry.lock`
 
-:floppy_disk: Agora vamos marcar esta versão como consolidada.
+💾 Agora vamos marcar esta versão como consolidada.
 
 `git commit -m "Adicionando dependências do projeto"`
 
@@ -243,9 +243,9 @@ Vemos dois arquivos não rastreados, precisamos avisar ao controle de versão qu
 
 `git push`
 
-:cake: Entusiasmados a começar a escrever sua aplicação? Agora que temos todo o ambiente configurado, já estamos bem próximo disso. Vamos ao próximo passo!
+🍰 Entusiasmados a começar a escrever sua aplicação? Agora que temos todo o ambiente configurado, já estamos bem próximo disso. Vamos ao próximo passo!
 
-[??? ➡️]()
+[Hello API ➡️](hello-api.md)
 
 [⬅️ Escolhendo as melhores ferramentas](ferramentas.md)
 
