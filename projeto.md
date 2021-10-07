@@ -98,6 +98,32 @@ poetry run python -c "import fastapi"
 ```
 Nenhum erro deve ocorrer.
 
+### 🦋 Httpx
+
+#### O que é?
+
+[Httpx](https://www.python-httpx.org/) é um cliente HTTP completo, com suporte ao protocolo HTTP/2 e provê interface de programação síncrona e assíncrona.
+
+#### Para que serve?
+
+Utilizaremos para fazer a integração com serviços externos. Suas funções facilitam a criação de requisições HTTP.
+
+#### Como instalar?
+
+Execute o comando:
+
+```
+poetry add httpx
+```
+
+#### Vamos verificar se deu tudo certo?
+Execute o seguinte comando:
+
+```
+poetry run python -c "import httpx"
+```
+Nenhum erro deve ocorrer.
+
 ### 🔗 Httpie
 
 #### O que é?
