@@ -4,9 +4,9 @@
   <img style="float: right;" src="imgs/planta.png" alt="capacete amarelo e ferramentas de desenho sobre a planta de uma construção"/>
 </p>
 
-O primeiro passo para a construção do nosso projeto é iniciar seu repositorio e adicionar suas dependências.
+O primeiro passo para a construção do nosso projeto é iniciar seu repositório e adicionar suas dependências.
 
-Faremos isto utilizando o [Github](https://github.com/), que é uma plataforma gratuita, muita conhecida e que irá nos ajudar com algumas integrações no futuro.
+Faremos isto utilizando o [Github](https://github.com/), que é uma plataforma gratuita, muito conhecida e que irá nos ajudar com algumas integrações no futuro.
 
 Mas por que iniciaremos criando o projeto lá e não no próprio computador?
 

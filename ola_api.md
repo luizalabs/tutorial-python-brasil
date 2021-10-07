@@ -14,9 +14,9 @@ Estão lembrados o que é a nossa aplicação? Caso não se recorde leia o nosso
 
 Acho que podemos iniciar com os dois requisitos listados abaixo:
 
-- [ ] Deve apresentar uma interface que possa ser consumida tanto por um website, tanto por um aplicativo para dispositivos móveis.
+- [ ] Deve apresentar uma interface que possa ser consumida tanto por um website, tanto por um aplicativo para dispositivos móveis
 
-- [ ] Deve prover um _endpoint_ que indique a saúde do sistema.
+- [ ] Deve prover um _endpoint_ que indique a saúde do sistema
 
 Mas como fazer isto se não temos nem mesmo uma aplicação ainda? Por onde começo?
 
@@ -214,7 +214,7 @@ async def healthcheck():
 Neste passo os arquivos devem estar da seguinte maneira:
 
 > api_pedidos/api.py
-```
+```python
 from fastapi import FastAPI
 
 
@@ -227,7 +227,7 @@ async def healthcheck():
 ```
 
 > tests/test_api.py
-```
+```python
 from fastapi.testclient import TestClient
 from http import HTTPStatus
 from api_pedidos.api import app
@@ -351,11 +351,11 @@ Parabéns! A aplicação está tomando forma! 🎉
 
 Podemos marcar como pronto as seguintes tarefas:
 
-- [x] Deve apresentar uma interface que possa ser consumida tanto por um website, tanto por um aplicativo para dispositivos móveis.
+- [x] Deve apresentar uma interface que possa ser consumida tanto por um website, tanto por um aplicativo para dispositivos móveis
 
-- [x] Deve prover um _endpoint_ que indique a saúde do sistema.
+- [x] Deve prover um _endpoint_ que indique a saúde do sistema
 
-- [x] O sistema deve apresentar testes. (Acabamos cumprindo uma tarefa a mais!)
+- [x] O sistema deve apresentar testes (Acabamos cumprindo uma tarefa a mais!)
 
 
 > 🐂 Uma API robusta provê maneiras de verificar sua integridade.
