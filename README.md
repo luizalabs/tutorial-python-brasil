@@ -34,3 +34,5 @@ Vamos tentar nos preparar para situações ruins que possam acontecer e garantir
 1. [📐 Iniciando o projeto](projeto.md)
 
 1. [👋 Olá API](ola_api.md)
+
+1. [🤝 Integração com serviços externos](externos.md)
