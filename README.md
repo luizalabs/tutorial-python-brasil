@@ -36,3 +36,17 @@ Vamos tentar nos preparar para situações ruins que possam acontecer e garantir
 1. [👋 Olá API](ola_api.md)
 
 1. [🤝 Integração com serviços externos](externos.md)
+
+1. [📜 Documentação](docs.md)
+
+1. [✔️ Integração contínua](continua.md)
+
+1. [🏆 Desafios](desafios.md)
+
+1. [🐆 Processos assíncronos](assincrono.md)
+
+1. [🔌 Circuit breaker](breaker.md)
+
+1. [🦸 Técnicas (um pouco) mais avançadas](avancadas.md)
+
+1. [📑 Referências e Dicas](referencias.md)
