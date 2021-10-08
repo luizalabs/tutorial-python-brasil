@@ -66,6 +66,7 @@ Com o projeto iniciado, vamos instalar as dependências.
 Chegou a hora de instalar algumas bibliotecas e utilitários que nos auxiliarão na criação do nosso sistema web, na realização de testes unitários e testes manuais.
 
 > 🖥️ O ambiente virtual
+
 > Como estamos utilizando o poetry, todas as bibliotecas serão instaladas em um ambiente virtual isolado, exclusivo para este projeto. Na primeira vez que o comando add for utilizado, o ambiente virtual será criado.
 > Veja mais detalhes sobre ambientes virtuais [aqui](ambientes_virtuais.md).
 
