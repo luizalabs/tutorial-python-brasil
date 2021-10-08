@@ -40,6 +40,12 @@ poetry add flake8 --dev
 
 > ℹ️ Utilizamos a opção --dev pois é um pacote necessário somente durante o desenvolvimento e não durante a execução do software.
 
+#### Como executar
+
+```
+poetry run flake8 .
+```
+
 ### 🔠 isort
 
 #### O que é?
@@ -66,6 +72,18 @@ poetry add isort --dev
 poetry run isort .
 ```
 
+#### Configuração
+
+Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
+
+```
+[tool.isort]
+profile = "black"
+line_length = 79
+```
+
+Assim evitamos um conflito com a ferramenta `black` e `flake8`.
+
 ### ✨ Black
 
 #### O que é?
@@ -91,12 +109,22 @@ poetry add black --dev
 ```
 poetry run black .
 ```
+#### Configuração
 
-### 🥷 pre-commit
+Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
+
+```
+[tool.black]
+line-length = 79
+```
+
+Assim evitamos um conflito com a ferramenta `flake8`.
+
+### 🥷 pre-commit (Menção honrosa 🏅) 
 
 Existem ferramentas que podem executar algum comando antes de um commit, como o objetivo de identificar possíveis problemas no seu programa antes o envio do código para o repositório remoto. Os comandos listadas acima são bons exemplos de execuções que podem ocorrer neste momento. Uma das ferramentas que provê essa funcionalidade é o pre-commit. Para saber mais, [clique aqui](https://pre-commit.com/).
 
-## Configurando o Github Actions
+## :octocat: Configurando o Github Actions
 
 - Crie a pasta `.github/workflows` dentro do seu repositório. Essa é a pasta padrão para as configurações do GIthub Actions.
 
@@ -197,15 +225,23 @@ Vemos uma pasta não rastreada, precisamos avisar ao controle de versão que mon
 git add .github/
 ```
 
+> ⚠️ Adicione também os arquivos que possivelmente foram modificados por nossas ferramentas de qualidade.
+
 💾 Agora vamos marcar esta versão como consolidada.
 
 ```
 git commit -m "Integração contínua"
 ```
 
-Por fim, envie ao github a versão atualizada do projeto.
+:octocat: Por fim, envie ao github a versão atualizada do projeto.
 ```
 git push
 ```
 
-> 🐂 Uma API robusta provê maneiras de verificar sua integridade.
+> 🐂 Uma api robusta possui evolução contínua garantindo qualidade a cada versão.
+
+[Desafios ➡️](desafios.md)
+
+[⬅️ Documentação](docs.md)
+
+[↩️ Voltar ao README ](README.md)
