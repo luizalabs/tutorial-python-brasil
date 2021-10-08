@@ -181,7 +181,7 @@ Quando verificar integrade o retorno deve possuir o seguinte formato:
 }
 ```
 
-Assim se precisarmos adicionar mais detlhes neste _endpoint_ podemos adicionar novas chaves a esta estrutura.
+Assim se precisarmos adicionar mais detalhes neste _endpoint_ podemos adicionar novas chaves a esta estrutura.
 Estes detalhes podem envolver o estado da conexão com o banco de dados.
 
 > tests/test_api.py
@@ -305,6 +305,11 @@ Para testar nossa aplicação manualmente, precisamos colocar nossa aplicação 
 O comando para isto é `uvicorn --reload api_pedidos.api:app`.
 
 Voilá, sua aplicação está no ar.  Vamos utilizar a ferramenta `httpie` para testar a aplicação.
+
+Execute o seguinte comando:
+```
+http :8000/healthcheck
+```
 
 ![implementação do healthcheck](imgs/healthcheck.png "implementação do healthcheck")
 
