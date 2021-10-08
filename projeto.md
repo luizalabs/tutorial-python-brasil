@@ -12,7 +12,6 @@ Mas por que iniciaremos criando o projeto lá e não no próprio computador?
 
 Queremos contar desde o início do projeto com uma cópia remota, garantindo assim que nosso trabalho não será perdido e que estará compartilhado. A cada passo dado vamos consolidando o que temos no momento.
 
-
 ## 🚧 Começando a tirar do papel o projeto
 
 Abra seu navegador, e acesse o seguinte [endereço](http://github.com). Crie uma conta se ainda não tiver.
