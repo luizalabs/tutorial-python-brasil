@@ -360,7 +360,7 @@ Podemos marcar como pronto as seguintes tarefas:
 
 > 🐂 Uma API robusta provê maneiras de verificar sua integridade.
 
-[Integração com serviços externos ➡️](integracao.md)
+[Integração com serviços externos ➡️](externos.md)
 
 [⬅️ Iniciando o projeto](projeto.md)
 
