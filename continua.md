@@ -120,7 +120,7 @@ line-length = 79
 
 Assim evitamos um conflito com a ferramenta `flake8`.
 
-### 🥷 pre-commit (Menção honrosa 🏅) 
+### 🕵️ pre-commit (Menção honrosa 🏅) 
 
 Existem ferramentas que podem executar algum comando antes de um commit, como o objetivo de identificar possíveis problemas no seu programa antes o envio do código para o repositório remoto. Os comandos listadas acima são bons exemplos de execuções que podem ocorrer neste momento. Uma das ferramentas que provê essa funcionalidade é o pre-commit. Para saber mais, [clique aqui](https://pre-commit.com/).
 
