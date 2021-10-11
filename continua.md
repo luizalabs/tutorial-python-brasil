@@ -122,11 +122,11 @@ Assim evitamos um conflito com a ferramenta `flake8`.
 
 ### 🕵️ pre-commit (Menção honrosa 🏅) 
 
-Existem ferramentas que podem executar algum comando antes de um commit, como o objetivo de identificar possíveis problemas no seu programa antes o envio do código para o repositório remoto. Os comandos listadas acima são bons exemplos de execuções que podem ocorrer neste momento. Uma das ferramentas que provê essa funcionalidade é o pre-commit. Para saber mais, [clique aqui](https://pre-commit.com/).
+Existem ferramentas que podem executar algum comando antes de um commit, com o objetivo de identificar possíveis problemas no seu programa antes do envio do código para o repositório remoto. Os comandos listados acima são bons exemplos de execuções que podem ocorrer neste momento. Uma das ferramentas que provê essa funcionalidade é o pre-commit. Para saber mais, [clique aqui](https://pre-commit.com/).
 
 ## :octocat: Configurando o Github Actions
 
-- Crie a pasta `.github/workflows` dentro do seu repositório. Essa é a pasta padrão para as configurações do GIthub Actions.
+- Crie a pasta `.github/workflows` dentro do seu repositório. Essa é a pasta padrão para as configurações do Github Actions.
 
 - Dentro da pasta crie um arquivo chamado `main.yml`. Esse arquivo será utilizado para determinar quais passos serão executados na integração. O arquivo deve possuir o seguinte conteúdo:
 
