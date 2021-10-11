@@ -98,7 +98,7 @@ def test_obter_itens_quando_identificacao_do_pedido_nao_encontrado_um_erro_deve_
     assert resposta.status_code == HTTPStatus.NOT_FOUND
 ```
 
-> 🪆 Vamos criar dublês para testar a obtenção de um pedido e seus itens, assim não precisamos realizar a requisição real por enquanto.
+>🎎 Vamos criar dublês para testar a obtenção de um pedido e seus itens, assim não precisamos realizar a requisição real por enquanto.
 
 O dublê pode ser escrito da seguinte maneira:
 
