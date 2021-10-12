@@ -101,7 +101,7 @@ from api_pedidos.esquema import HealthCheckResponse, Item
 # ...
 @app.get("/healthcheck", tags=["healthcheck"], summary="Integridade do sistema", description="Checa se o servidor está online", response_model=HealthCheckResponse)
 def healthcheck():
-    return HealthCheckResponse(status="OK")
+    return HealthCheckResponse(status="ok")
 # ...
 ```
 
@@ -144,15 +144,6 @@ class ErrorResponse(BaseModel):
 Depois disso vamos adicionar o esquema de retorno de erro na documentação:
 
 ```python
-# ...
-@app.exception_handler(PedidoNaoEncontradoError)
-def tratar_erro_pedido_nao_encontrado(request: Request, exc: PedidoNaoEncontradoError):
-    return JSONResponse(status_code=HTTPStatus.NOT_FOUND, content=ErrorResponse(message="Pedido não encontrado"))
-
-
-@app.exception_handler(FalhaDeComunicacaoError)
-def tratar_erro_falha_de_comunicacao(request: Request, exc: FalhaDeComunicacaoError):
-    return JSONResponse(status_code=HTTPStatus.BAD_GATEWAY, content=ErrorResponse(message="Falha de comunicação com o servidor remoto"))
 # ...
 @app.get("/orders/{identificacao_do_pedido}/items", responses={
     HTTPStatus.NOT_FOUND.value: {

@@ -251,6 +251,12 @@ git commit -m "Adiciona integração contínua"
 git push
 ```
 
+✅ Pronto, agora o seu projeto está integrado com o Github Actions. 🎉
+
+Confira na aba _actions_ do seu repositório.
+
+![Github actions em ação](imgs/actions.png)
+
 > 🐂 Uma api robusta possui evolução contínua garantindo qualidade a cada versão.
 
 [Desafios ➡️](desafios.md)
