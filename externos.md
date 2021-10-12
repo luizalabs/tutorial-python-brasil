@@ -514,9 +514,10 @@ def _recupera_itens_por_pacote(uuid_do_pedido, uuid_do_pacote):
     return [
         Item(
             sku=item["product"]["code"],
-            description=item["product"]["description"],
-            image_url=item["product"]["image_url"],
-            reference=item["product"]["reference"],
+            # campos que utilizam a função get são opicionais
+            description=item["product"].get("description", ""),
+            image_url=item["product"].get("image_url", ""),
+            reference=item["product"].get("reference", ""),
             quantity=item["quantity"],
         )
         for item in response.json()
@@ -531,15 +532,18 @@ def recuperar_itens_por_pedido(identificacao_do_pedido: UUID) -> list[Item]:
         )
         response.raise_for_status()
         pacotes = response.json()["packages"]
-        return [
-            _recupera_itens_por_pacote(identificacao_do_pedido, pacote["uuid"])
-            for pacote in pacotes
-        ]
-    except httpx.HTTPError as e:
-        if response.status_code == HTTPStatus.NOT_FOUND:
-            raise PedidoNaoEncontradoError() from e
+        itens = []
+        for pacote in pacotes:
+            itens.extend(
+                _recupera_itens_por_pacote(identificacao_do_pedido, pacote["uuid"])
+            )
+        return itens
+    except httpx.HTTPStatusError as exc:
         # aqui poderiam ser tratados outros erros como autenticação
-        raise FalhaDeComunicacaoError() from e
+        if exc.response.status_code == HTTPStatus.NOT_FOUND:
+            raise PedidoNaoEncontradoError() from exc
+    except httpx.HTTPError as exc:
+        raise FalhaDeComunicacaoError() from exc
 ```
 
 Leia o código e entenda o que está acontecendo.
