@@ -17,40 +17,13 @@ Basicamente, a grande vantagem da integração contínua está no feedback insta
 
 ## Ferramentas
 
-### 🎨 Flake8
-
-#### O que é?
-
-Flake8 é um programa de linha de comando que verifica seu código e busca por erros ou formatações que não seguem o guia de estilo padrão do python, conhecido como PEP-8 . Além disso também verifica a complexidade ciclamática do seu código.
-
-#### Para que serve?
-
-É muito comum cometermos alguns erros de sintaxe, principalmente quando ainda estamos nos familiarizando com uma linguagem nova. Assim como durante o nosso dia a dia podemos esquecer algum código não utilizado. Esta ferramenta vai analisar o seu código e procurar possíveis erros, evitando assim que só ocorram no momento em que o código for executado.
-Esta ferramenta também aponta possíveis linhas que não estão seguindo o estilo de código definido para a linguagem python.
-Outra coisa bem comum quando estamos escrevendo código é que uma parte dele começa a se tornar tão complexa que há n caminhos por onde seu algoritmo pode seguir. Normalmente isto indica que devemos modificar o código para torná-lo mais simples e legível. O Flake8 irá apontar qual parte do seu código está complexa e que deve ser modificada.
-Esta ferramenta será integrada ao editor, dessa maneira, ao salvar o arquivo, teremos os erros encontrados apontados diretamente no mesmo.
-
-#### Como instalar
-
-Execute o comando abaixo:
-
-```
-poetry add flake8 --dev
-```
-
-> ℹ️ Utilizamos a opção --dev pois é um pacote necessário somente durante o desenvolvimento e não durante a execução do software.
-
-#### Como executar
-
-```
-poetry run flake8 .
-```
+Vamos instalar algumas ferramentas para nos ajudarem a terem um código bem organizado e testado.
 
 ### 🔠 isort
 
 #### O que é?
 
-isort é uma ferramenta que ordena de forma alfabética as importações, separando as bilbiotecas que são padrões da linguagem, as externas ao sistema e as nativas do próprio sistema.
+[isort](https://pycqa.github.io/isort/) é uma ferramenta que ordena de forma alfabética as importações, separando as bilbiotecas que são padrões da linguagem, as externas ao sistema e as nativas do próprio sistema.
 
 #### Para que serve?
 
@@ -120,6 +93,37 @@ poetry run black .
 ```
 
 Assim evitamos um conflito com a ferramenta `flake8`.
+
+### 🎨 Flake8
+
+#### O que é?
+
+Flake8 é um programa de linha de comando que verifica seu código e busca por erros ou formatações que não seguem o guia de estilo padrão do python, conhecido como PEP-8 . Além disso também verifica a complexidade ciclamática do seu código.
+
+#### Para que serve?
+
+É muito comum cometermos alguns erros de sintaxe, principalmente quando ainda estamos nos familiarizando com uma linguagem nova. Assim como durante o nosso dia a dia podemos esquecer algum código não utilizado. Esta ferramenta vai analisar o seu código e procurar possíveis erros, evitando assim que só ocorram no momento em que o código for executado.
+Esta ferramenta também aponta possíveis linhas que não estão seguindo o estilo de código definido para a linguagem python.
+Outra coisa bem comum quando estamos escrevendo código é que uma parte dele começa a se tornar tão complexa que há n caminhos por onde seu algoritmo pode seguir. Normalmente isto indica que devemos modificar o código para torná-lo mais simples e legível. O Flake8 irá apontar qual parte do seu código está complexa e que deve ser modificada.
+Esta ferramenta será integrada ao editor, dessa maneira, ao salvar o arquivo, teremos os erros encontrados apontados diretamente no mesmo.
+
+#### Como instalar
+
+Execute o comando abaixo:
+
+```
+poetry add flake8 --dev
+```
+
+> ℹ️ Utilizamos a opção --dev pois é um pacote necessário somente durante o desenvolvimento e não durante a execução do software.
+
+#### Como executar
+
+```
+poetry run flake8 .
+```
+
+> ℹ️  Pode ser necessário a intervenções manuais para que o código seja corrigido.
 
 ### 🕵️ pre-commit (Menção honrosa 🏅) 
 
@@ -202,8 +206,6 @@ Através do arquivo de configuração, nós definimos que alguns passos serão e
 
 🎉 Pronto, a partir de agora, o Github Actions irá rodar todos as validações e testes do seu projeto de forma automatizada e indicará se a construção do mesmo está com problemas.
 
-Isto será extremamente útil nos próximos passos.
-
 ## 💾 Salvando a versão atual do código
 
 Primeiro passo é checar o que foi feito até agora:
@@ -213,6 +215,12 @@ $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+      pyproject.toml
+      poetry.lock
+      
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         .github/
@@ -226,12 +234,16 @@ Vemos uma pasta não rastreada, precisamos avisar ao controle de versão que mon
 git add .github/
 ```
 
+Vamos adicionar também as novas dependências instaladas.
+
+`git add pyproject.toml poetry.lock`
+
 > ⚠️ Adicione também os arquivos que possivelmente foram modificados por nossas ferramentas de qualidade.
 
 💾 Agora vamos marcar esta versão como consolidada.
 
 ```
-git commit -m "Integração contínua"
+git commit -m "Adiciona integração contínua"
 ```
 
 :octocat: Por fim, envie ao github a versão atualizada do projeto.
