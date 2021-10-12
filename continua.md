@@ -66,12 +66,6 @@ poetry add isort --dev
 
 > ℹ️ Utilizamos a opção --dev pois é um pacote necessário somente durante o desenvolvimento e não durante a execução do software.
 
-#### Como executar
-
-```
-poetry run isort .
-```
-
 #### Configuração
 
 Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
@@ -80,6 +74,12 @@ Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
 [tool.isort]
 profile = "black"
 line_length = 79
+```
+
+#### Como executar
+
+```
+poetry run isort .
 ```
 
 Assim evitamos um conflito com a ferramenta `black` e `flake8`.
@@ -104,11 +104,6 @@ poetry add black --dev
 
 > ℹ️ Utilizamos a opção --dev pois é um pacote necessário somente durante o desenvolvimento e não durante a execução do software.
 
-#### Como executar
-
-```
-poetry run black .
-```
 #### Configuração
 
 Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
@@ -116,6 +111,12 @@ Precisamos adicionar no arquivo `pyproject.toml` a seguinte configuração
 ```
 [tool.black]
 line-length = 79
+```
+
+#### Como executar
+
+```
+poetry run black .
 ```
 
 Assim evitamos um conflito com a ferramenta `flake8`.
