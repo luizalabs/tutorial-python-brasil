@@ -23,7 +23,7 @@ Vamos tentar nos preparar para situações ruins que possam acontecer e garantir
 
 - Conhecimento básico de Python
 - Conhecimento de desenvolvimento web
-- Python 3.6+
+- Python 3.7+
 
 ## Sumário
 
