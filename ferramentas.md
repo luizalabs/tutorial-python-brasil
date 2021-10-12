@@ -18,7 +18,7 @@ Para garantir o acompanhamento do tutorial, verifique se as ferramentas apresent
 
 ### 🐍 Python
 
-> ⚠️ É necessário versão igual ou acima da versão 3.6.2 para acompanhar o curso.
+> ⚠️ É necessário versão igual ou acima da versão 3.7 para acompanhar o curso.
 
 #### O que é?
 
