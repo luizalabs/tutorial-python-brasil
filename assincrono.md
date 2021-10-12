@@ -158,7 +158,7 @@ async def recuperar_itens_por_pedido(
             raise FalhaDeComunicacaoError() from exc
 ```
 
-As mudanças foram explicadas no exemplo anterior, mas repare que como cada requisição retorna uma lista dos itens, precisamos agrupa-los em uma única lista. É como se tivessemos uma lista de listas `[[1, 2, 3], [4, 5, 6]]` e vamos transformar em `[1, 2, 3 ,4, 5, 6]`.
+As mudanças foram explicadas no exemplo anterior, mas repare que como cada requisição retorna uma lista dos itens, precisamos agrupa-los em uma única lista. É como se tivessemos uma lista de listas `[[1, 2, 3], [4, 5, 6]]` e vamos transformar em `[1, 2, 3 ,4, 5, 6]`. Isto é feito no comando `list(chain.from_iterable(itens))`.
 
 E o código da _api_, o que precisamos modificar?
 
@@ -209,9 +209,11 @@ async def listar_itens(itens: list[Item] = Depends(recuperar_itens_por_pedido)):
 # ...
 ```
 
-A adição de `sync` torna os nosso endpoints assíncronos embora caso eles ainda executem códigos síncronos podemos ter o bloqueio dos nossos trabalhadores.
+A adição de `async` torna os nosso endpoints assíncronos embora caso eles ainda executem códigos síncronos podemos ter o bloqueio dos nossos trabalhadores.
 
 Uma coisa engraçada é que como nossos testes são baseados em requisições não precisamos altera-los. O comportamento da _api_ deve ser o mesmo. Vamos rodar os testes para garantir que tudo está ok.
+
+> 💁 Aqui não escrevemos os testes para o código assíncrono, mas recomendamos que o faça. Uma ferramenta popularmente utilizada é a [AnyIO](https://anyio.readthedocs.io/en/stable/) e o necessário para rodar testes assíncronos é marcar as funções como assíncronos. Leia mais detallhes [aqui](https://fastapi.tiangolo.com/pt/advanced/async-tests/).
 
 ## 🔧 Testando manualmente
 
