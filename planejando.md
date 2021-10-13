@@ -26,9 +26,9 @@ Este sistema deve seguir as seguintes regras:
 
 * Os itens de um pedido devem conter um identificador (sku), uma descrição, uma imagem, uma referência e a quantidade.
 
-* Exibir um relatório com o total de métodos de pagamento utilizados por um cliente;
+* Exibir um relatório com o total de métodos de pagamento utilizados nos últimos 30 pedidos;
 
-* Dado um produto, enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
+* Dado um pedido (vários itens), enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
 
 * Como será consumido por terceiros deve apresentar boa documentação;
 
