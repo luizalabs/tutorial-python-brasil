@@ -263,7 +263,7 @@ Vemos dois arquivos não rastreados, precisamos avisar ao controle de versão qu
 
 💾 Agora vamos marcar esta versão como consolidada.
 
-`git commit -m "Adicionando dependências do projeto"`
+`git commit -m "Adiciona as dependências do projeto"`
 
 :octocat: Por fim, envie ao github a versão atualizada do projeto.
 
