@@ -22,15 +22,17 @@ Este sistema deve seguir as seguintes regras:
 
 * Deve prover um _endpoint_ que indique a saúde do sistema;
 
-* Para cada pacote de um pedido, retornar o seu prazo de entrega;
-
 * Dado um pedido, retornar os seus itens;
 
 * Os itens de um pedido devem conter um identificador (sku), uma descrição, uma imagem, uma referência e a quantidade.
 
 * Exibir um relatório com o total de métodos de pagamento utilizados por um cliente;
 
+* Dado um produto, enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
+
 * Como será consumido por terceiros deve apresentar boa documentação;
+
+* O sistema deve estar preparado para receber novas funcionalidades, garantindo qualidade a cada entrega;
 
 * O sistema deve apresentar testes.
 

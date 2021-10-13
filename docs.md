@@ -198,6 +198,10 @@ Vamos adicionar as mudanças nesta revisão.
 
 Agora que temos uma api e documentação, vamos dar um próximo passo na qualidade e evolução do nosso projeto.
 
+Cumprimos mais um requisito:
+
+- [x] Como será consumido por terceiros deve apresentar boa documentação;
+
 > 🐂 Uma api robusta possui boa documentação facilitando assim uma integração externa.
 
 [Integração contínua ➡️](continua.md)

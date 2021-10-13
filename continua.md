@@ -253,6 +253,10 @@ git push
 
 ✅ Pronto, agora o seu projeto está integrado com o Github Actions. 🎉
 
+Cumprimos mais um requisito:
+
+- [x] O sistema deve estar preparado para receber novas funcionalidades, garantindo qualidade a cada entrega;
+
 Confira na aba _actions_ do seu repositório.
 
 ![Github actions em ação](imgs/actions.png)
