@@ -77,10 +77,10 @@ Quando precisa obter dados com frequência e que não mudam. Caso adote a estrat
 
 ## 🧠 Memória Compartilhada (nível avançado)
 ### O que é ?
-É o compartilhamento entre thread e pods de dados armazenado em objeto de memória, utilizando apenas um único recurso para este dado. Ou seja, um respectivo dado foi armazenado em disco alocando um determinado tamanho de memória. Este mesmo dado poderá ser compartilhado por _n_ threads (processos) da mesma aplicação ou em pods diferente do mesmo recurso. Não tendo a necessidade de realizar alocações de memórias em diversos processamento repetindo o mesmo dado.
+É o compartilhamento de dados em objeto de memória entre threads e pods, utilizando apenas um único recurso para este dado. Ou seja, um respectivo dado foi armazenado em disco alocando um determinado tamanho de memória. Este mesmo dado poderá ser compartilhado por _n_ threads (processos) da mesma aplicação ou em pods diferente do mesmo recurso. Não tendo a necessidade de realizar alocações de memórias em diversos processamento repetindo o mesmo dado.
 
 ### Quando utilizar?
-Quando tiver a necessidade de um dado ser acessado para leitura por alguns processos. Como, por exemplo, para a thread obter um token de client credentials ao invés de ir no vault poderá ser compartilhado através de shared memory (sem ttl). 
+Quando tiver a necessidade de um dado ser acessado para leitura por alguns processos. Como, por exemplo, para a thread obter um token de client credential ao invés de ir no _vault_ poderá ser compartilhado através de _shared memory_ (sem ttl). 
 
 ### Dicas / Links / Ferramentas
 - https://github.com/luizalabs/shared-memory-dict
@@ -93,7 +93,7 @@ Quando tiver a necessidade de um dado ser acessado para leitura por alguns proce
 Tarefas em background podem ser consideradas como tarefas assíncronas. Os processos assíncronos são processos que não dependem de uma resposta da realização da tarefa, como vemos em uma requisição de uma WebAPI, e são normalmente orientadas a mensagens e eventos. 
 
 ### Quando utilizar?
-A utilização de tarefa em background pode ser utilizado para processar dados em lotes, leituras de arquivos, processos com muitas integrações de recursos e serviços e tarefas que deverão ser executadas periodicamente em processos agendados.
+A utilização de tarefa em background pode ser utilizado para processar dados em lotes, leituras de arquivos, processos com muitas integrações de recursos e serviços, e tarefas que deverão ser executadas periodicamente em processos agendados.
 
 ### Dicas / Links / Ferramentas
 - https://kafka.apache.org/
@@ -101,7 +101,8 @@ A utilização de tarefa em background pode ser utilizado para processar dados e
 - https://kafka-python.readthedocs.io/en/master/usage.html
 - https://pika.readthedocs.io/en/0.10.0/
 
- 
+
+
 [Referências e Dicas ➡️](referencias.md)
 
 [⬅️ Circuit breaker](breaker.md)
