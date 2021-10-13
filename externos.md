@@ -22,7 +22,7 @@ O retorno deve ser uma lista contendo a identificação e a quantidade daqueles 
 
 Iremos fazer a junção dos pacotes.
 
-A rota para acesso desse recurso pode ser `/orders/{identificação do produto}/items` assim temos uma entrada de dados bem definida através da url.
+A rota para acesso desse recurso pode ser `/orders/{identificação do pedido}/items` assim temos uma entrada de dados bem definida através da url.
 
 A identificação do produto deve ser um uuid válido, caso isto não ocorra devemos avisar que o pedido não foi encontrado.
 
