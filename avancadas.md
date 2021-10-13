@@ -8,8 +8,8 @@ Rate Limit é a limitação de solicitação entre um controlador de origem e um
 Utiliza a estratégia de Rate Limit no ambiente de WebAPIs para evitar ataques de invasores, quando o mesmo fica explorando as vulnerabilidades de segurança do sistema para infectar e controlar máquinas e dispositivos. 
 
 ### Dicas / Links / Ferramentas
-https://pypi.org/project/fastapi-limiter/
-https://pypi.org/project/slowapi/
+- https://pypi.org/project/fastapi-limiter/
+- https://pypi.org/project/slowapi/
 
 
 ## 🔒 Autenticação e Autorização
@@ -20,10 +20,10 @@ Autenticação é o processo do sistema para verificar a identidade virtual do u
 Colocar um processo de Autenticação na sua é WebAPI reforçar a segurança da mesma evitando que usuários maliciosos consigam acessá-la e causar algum impacto no sistema. O processo de Autorização vem na sequência, a importância de adotar esse processo é que mesmo os usuários que consigam se autenticar não necessariamente eles terão acessos às informações e recursos. Na Autorização você consegue limitar o usuário nos acessos aos recursos e os dados do sistema.
 
 ### Dicas / Links / Ferramentas
-https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/
-https://pypi.org/project/python-oauth2/
-https://pypi.org/project/python-openid/
-https://www.keycloak.org/
+- https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/
+- https://pypi.org/project/python-oauth2/
+- https://pypi.org/project/python-openid/
+- https://www.keycloak.org/
 
 
 ## 🗺️ Hateoas
@@ -34,8 +34,8 @@ Hateoas (Hypermedia As the Engine Of Application State) vem da palavra Hypermedi
 A utilização de Hateoas acontece quando o FrontEnd (client) não precisa ter as regras para saber consumir as API. Pois, no próprio documento json tem os atributos existentes com os possíveis links para a navegação dos próximos recursos. Isso é importante quando temos APIs abertas e os clients não conhecem as regras de negócio do server (backend). Também podemos utilizar em times grandes que trabalham provendo recursos para várias equipes através de WebAPIs. 
 
 ### Dicas / Links / Ferramentas
-https://restful-api-design.readthedocs.io/en/latest/urls.html
-https://pypi.org/project/ripozo/
+- https://restful-api-design.readthedocs.io/en/latest/urls.html
+- https://pypi.org/project/ripozo/
 
 
 ## 📰 Log
@@ -46,8 +46,8 @@ Log nada mais é que a apresentação das informações de etapas percorridas do
 Sempre! Mas depende do tipo de log. Isso mesmo que você leu, depende do tipo ou o termo correto nível de log e o ambiente que a aplicação está. Na fase de desenvolvimento utiliza-se o log no nível debug, esse nível ajuda a percorrer o algorítmo com maior frequência e acompanhar em detalhes. Em ambientes de teste e de produção utiliza o log no nível de erro ou info. Esses níveis possibilitam ter os registros de erros da aplicação ou alguma informação relevante, sem poluir os registros.
 
 ### Dicas / Links / Ferramentas
-https://docs.python.org/3/library/logging.html
-https://www.geeksforgeeks.org/logging-in-python/
+- https://docs.python.org/3/library/logging.html
+- https://www.geeksforgeeks.org/logging-in-python/
 
 
 ## 📄 Paginação
@@ -58,9 +58,9 @@ Paginação é a estratégia de dividir em páginas as informações solicitadas
 Normalmente é utilizado em recursos que provê uma listagem de resultados. Esse recurso, por padrão, exige um alto processamento para retornar todas as informações e consequentemente sobrecarrega o processamento da rede. Para isso é aplicado a paginação em sua API especificando apenas a quantidade limite de cada página.
 
 ### Dicas / Links / Ferramentas
-https://uriyyo-fastapi-pagination.netlify.app/
-https://fastapi.tiangolo.com/pt/tutorial/query-params/?h=limit
-https://alpha.dev.magalu.com/apis/maestro
+- https://uriyyo-fastapi-pagination.netlify.app/
+- https://fastapi.tiangolo.com/pt/tutorial/query-params/?h=limit
+- https://alpha.dev.magalu.com/apis/maestro
 
 ## 🗄️ Cache
 ### O que é ?
@@ -70,9 +70,9 @@ https://alpha.dev.magalu.com/apis/maestro
 Quando precisa obter dados com frequência e que não mudam. Caso adote a estratégia de um Banco de Dados a operação será vinculada um I/O, utilização de recursos de rede e afeta o desempenho da aplicação. Adotando uma estratégia de cache da aplicação, além de não necessitar os pontos anteriores, há uma melhora de performance do sistema. Esses dados podem ser como token de sessão, código de identificação (id) de entidade, nome de usuário ou qualquer outro dado que será usada constatemente pelo algorítimo e não sofrerá alteração.
 
 ### Dicas / Links / Ferramentas
-https://github.com/long2ice/fastapi-cache
-https://docs.python.org/pt-br/3.10/library/functools.html
-https://medium.com/fintechexplained/advanced-python-how-to-implement-caching-in-python-application-9d0a4136b845
+- https://github.com/long2ice/fastapi-cache
+- https://docs.python.org/pt-br/3.10/library/functools.html
+- https://medium.com/fintechexplained/advanced-python-how-to-implement-caching-in-python-application-9d0a4136b845
 
 
 ## 🧠 Memória Compartilhada (nível avançado)
@@ -83,9 +83,9 @@ https://medium.com/fintechexplained/advanced-python-how-to-implement-caching-in-
 Quando tiver a necessidade de um dado ser acessado para leitura por alguns processos. Como, por exemplo, para a thread obter um token de client credentials ao invés de ir no vault poderá ser compartilhado através de shared memory (sem ttl). 
 
 ### Dicas / Links / Ferramentas
-https://github.com/luizalabs/shared-memory-dict
-https://docs.python.org/3/library/multiprocessing.shared_memory.html
-https://docs.python.org/2/library/multiprocessing.html#sharing-state-between-processes
+- https://github.com/luizalabs/shared-memory-dict
+- https://docs.python.org/3/library/multiprocessing.shared_memory.html
+- https://docs.python.org/2/library/multiprocessing.html#sharing-state-between-processes
 
 
 ## ⚙️ Tarefa em Background (worker, mensageria, tópicos)
@@ -96,10 +96,10 @@ Tarefas em background podem ser consideradas como tarefas assíncronas. Os proce
 A utilização de tarefa em background pode ser utilizado para processar dados em lotes, leituras de arquivos, processos com muitas integrações de recursos e serviços e tarefas que deverão ser executadas periodicamente em processos agendados.
 
 ### Dicas / Links / Ferramentas
-https://kafka.apache.org/
-https://www.rabbitmq.com/
-https://kafka-python.readthedocs.io/en/master/usage.html
-https://pika.readthedocs.io/en/0.10.0/
+- https://kafka.apache.org/
+- https://www.rabbitmq.com/
+- https://kafka-python.readthedocs.io/en/master/usage.html
+- https://pika.readthedocs.io/en/0.10.0/
 
  
 [Referências e Dicas ➡️](referencias.md)
