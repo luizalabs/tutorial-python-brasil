@@ -24,13 +24,13 @@ Agora acesse a URL `http://localhost:8000/docs` e veja a documentação.
 
 Alem desta interface, temos também a geração automática de uma documentação seguindo as especificações da [OpenAPI 3.0](https://swagger.io/specification/). Você pode acessa-la através do endereço `http://localhost:8000/docs/openapi.json`.
 
-Isto nos trás dois benefícios, agora possuimos uma documentação interativa seguindo um padrão consolidado no mercado, e também possuimos uma documentação que pode ser usada para gerar automaticamente um cliente da API em diversas linguagens.
+Isto nos traz dois benefícios, agora possuimos uma documentação interativa seguindo um padrão consolidado no mercado, e também possuimos uma documentação que pode ser usada para gerar automaticamente um cliente da API em diversas linguagens.
 
 > ℹ️ Consulte https://swagger.io/tools/swagger-codegen/ para saber mais sobre o processo de geração de clientes à partir de uma documentação.
 
 ## 📔 Aprimorando nossa documentação
 
-Navegando por nossa api percebemos ambos os endpoints estão agrupados em conjunto chamado _default_.
+Navegando por nossa api percebemos que ambos os endpoints estão agrupados em conjunto chamado _default_.
 
 Podemos melhorar isto agrupando os endpoints de recursos similares utilizando _tags_.
 
@@ -109,7 +109,7 @@ Após a melhoria, a documentação fica assim:
 
 ![após adicionar esquema de retorno do healthcheck](imgs/apos_esquema_health.png)
 
-Vamos fazer ajuste similar para o _endpoint_ de _pedidos_:
+Vamos fazer um ajuste similar para o _endpoint_ de _pedidos_:
 
 Antes da melhoria, a documentação era assim:
 
@@ -161,7 +161,7 @@ Depois disso vamos adicionar o esquema de retorno de erro na documentação:
 
 > 💁 Ainda temos outras customizações na documentação que podem ser interessantes como exemplos de entradas e saídas. Para mais exemplos consulte: https://fastapi.tiangolo.com/advanced/additional-responses/
 
-🥳 Agora nossa api está documentada! Ficou muito mais fácil para alguém que queira se integrar a sua API. **Mas não se esqueça de manter sempre atualizada a documentação!**
+🥳 Agora nossa api está documentada! Ficou muito mais fácil para alguém que queira se integrar a sua API. **Mas não se esqueça de manter a documentação sempre atualizada!**
 
 ## 💾 Salvando a versão atual do código
 
