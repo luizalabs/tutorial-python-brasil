@@ -27,7 +27,7 @@ Aqui focaremos somente na visão de um vendedor (seller) e utilizaremos o _tenan
 > Para mais detalhes sobre tenants e perspectivas acesse [Tenants e Perspectivas](https://alpha.dev.magalu.com/guias/walkthrough#tenants-e-perspectivas)
 
 ```
-http https://alpha.api.magalu.com/seller/v1/whoami/tenants X-API-KEY:<APIKEY>
+http https://alpha.api.magalu.com/account/v1/whoami/tenants X-API-KEY:<APIKEY>
 ```
 
 Copie a identificação (uuid) do tenant `stenagam.SELLER` para ser utilizado nas próximas requisições.
@@ -35,13 +35,13 @@ Copie a identificação (uuid) do tenant `stenagam.SELLER` para ser utilizado na
 Próximo passo é explorar a consulta de pedidos e seus itens.
 
 ```
-http https://alpha.api.magalu.com/maestro/v1/orders X-API-KEY:<APIKEY> X-TENANT-ID: 21fea73c-e244-497a-8540-be0d3c583596
+http https://alpha.api.magalu.com/maestro/v1/orders X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
 ```
 
 Podemos verificar também um pedido em específico.
 
 ```
-http https://alpha.api.magalu.com/maestro/v1/orders/13bdb3e3-8fad-4f9b-a6c3-2fa99786289f X-API-KEY:<APIKEY> X-TENANT-ID: 21fea73c-e244-497a-8540-be0d3c583596
+http https://alpha.api.magalu.com/maestro/v1/orders/13bdb3e3-8fad-4f9b-a6c3-2fa99786289f X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
 ```
 
 Assim como podemos consultar uma lista de produtos a partir de um pedido e seu respectivo pacote.
