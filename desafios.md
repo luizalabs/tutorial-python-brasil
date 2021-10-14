@@ -26,7 +26,7 @@ Relembrando, ainda temos as seguintes tarefas a serem feitas.
 
 Exibir um relatório com o total de métodos de pagamento utilizados nos últimos 30 pedidos (em um cenário real este critério seria outro como uma data).
 
-Para obter esta informação precisamos de consultar a [api de pedidos do Magalu](https://n.dev.magalu.com/apis/maestro).
+Para obter esta informação precisamos de consultar a [api de pedidos do Magalu](https://alpha.dev.magalu.com/apis/maestro).
 
 Verifique o _endpoint_ que contém esta informação e se atente à paginação do recurso, ou seja, a página só contem 10 pedidos.
 
