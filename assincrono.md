@@ -1,6 +1,6 @@
 # 🐆 Processos assíncronos
 
-## O problema
+## 🔥 O problema
 
 Vamos pensar um pouquinho na funcionalidade "Dado um pedido, retornar os seus itens" que já implementamos.
 
@@ -22,7 +22,7 @@ Se a primeira requisição demorar 1 segundo, as demais também e se um pedido t
 
 😨 Nossa, isto não está parecendo muito legal...os valores de 1 segundo para cada requisição pode ser um pouco exagerado, mas ajuda a evidenciar o problema.
 
-## Demonstração e Solução
+## 🧑‍🏫 Demonstração e Solução
 
 Vamos fazer uma simulação utilizando código para visualisar melhor este cenário.
 
@@ -79,7 +79,7 @@ A unica função que não esperamos utilizando `await` é a função `main`, que
 
 > ⚡ Ficou interessado em ler mais sobre chamadas assíncronas em Python?? A documentação do [Python](https://docs.python.org/pt-br/3/library/asyncio.html) ou do [FastAPI](https://fastapi.tiangolo.com/pt/async/) podem te ajudar.
 
-## Modificando nossa API
+## ⌨️ Modificando nossa API
 
 Para nossa sorte os frameworks escolhidos (httpx e fastapi) já são compatíveis com chamadas assíncronas, e não precisaremos de grandes modificações no código.
 
