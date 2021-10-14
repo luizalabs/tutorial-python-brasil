@@ -8,7 +8,7 @@ Neste tutorial vamos aprender a construir API's utilizando Python e FastAPI, int
 
 Abordaremos conceitos como integração com serviços externos, integração contínua e testes automatizados. Analisaremos cenários onde precisaremos de uma melhor performance e algumas técnicas para alcançar este objetivo como chamadas a funções assíncronas.
 
-Vamos tentar nos preparar para situações ruins que possam acontecer e garantir que nosso sistema sera resiliente.
+Vamos tentar nos preparar para situações ruins que possam acontecer e garantir que nosso sistema será resiliente.
 
 ## O que veremos?
 
