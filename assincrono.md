@@ -6,7 +6,7 @@ Vamos pensar um pouquinho na funcionalidade "Dado um pedido, retornar os seus it
 
 Nosso algoritmo faz uma primeira requisição para recuperar os pacotes de um pedido, para em seguida fazer uma nova requisição para cada um dos pacotes e recuperar os seus itens.
 
-A primeira vista isto parece _ok_, mas aqui temos alguns problemas escondidos aí.
+A primeira vista isto parece _ok_, mas temos alguns problemas escondidos aí.
 
 Enquanto estamos trabalhando em uma requisição, todas as outras estão aguardando. O `uvicorn` que é o servidor que estamos utilizando até pode ter vários trabalhadores (`workers`) para mitigar um pouco isto, porém caso várias requisições aconteçam ao mesmo tempo, os trabalhadores podem ficar ocupados.
 
@@ -18,7 +18,7 @@ Vamos ver um desenho de como isto acontece:
 
 ![Diagrama de sequência do algoritmo de buscar itens de um pedido](imgs/sequencia1.png)
 
-Se a primeira requisição demorar 1 segundo e as demais também, se um pedido tiver 10 pacotes demoraremos 11s para responder todos os itens.
+Se a primeira requisição demorar 1 segundo, as demais também e se um pedido tiver 10 pacotes, demoraremos 11s para responder todos os itens.
 
 😨 Nossa, isto não está parecendo muito legal...os valores de 1 segundo para cada requisição pode ser um pouco exagerado, mas ajuda a evidenciar o problema.
 
@@ -73,9 +73,9 @@ O código se torna um pouco mais complexo, porém temos um ganho considerável s
 
 A primeira mudança é adição de um cliente assíncrono e mudança de nossa função para uma função assíncrona, com isso podemos fazer a requisição de um pedido e enquanto espera, trabalhar em outra coisa. Depois transformamos a chamada de recuperação de itens em assíncronas também, assim todas podem ser feitas ao mesmo tempo e aguardaremos seus retornos com a função `gather`. O papel dessa função é literalmente agrupar todas as respostas.
 
-Um detalhe que precisamos ficar atento aqui é que toda função assíncrona é aguardado com a expressão `await` e que await sempre estará presente em uma função assíncrona.
+Um detalhe que precisamos ficar atento aqui é que toda função assíncrona é aguardada com a expressão `await` e que a palavra reservada `await` sempre estará presente em uma função assíncrona.
 
-A unica função que não esperamos utilizando `await` é a função `main`, que é passadapara a função `run`, que por baixo dos panos cria um loop de eventos necessário para executar funções assíncronas e aguarda a execução da mesma.
+A unica função que não esperamos utilizando `await` é a função `main`, que é passada para a função `run`, que por baixo dos panos cria um loop de eventos necessário para executar funções assíncronas e aguarda a execução da mesma.
 
 > ⚡ Ficou interessado em ler mais sobre chamadas assíncronas em Python?? A documentação do [Python](https://docs.python.org/pt-br/3/library/asyncio.html) ou do [FastAPI](https://fastapi.tiangolo.com/pt/async/) podem te ajudar.
 
@@ -211,7 +211,7 @@ async def listar_itens(itens: list[Item] = Depends(recuperar_itens_por_pedido)):
 
 A adição de `async` torna os nosso endpoints assíncronos embora caso eles ainda executem códigos síncronos podemos ter o bloqueio dos nossos trabalhadores.
 
-Uma coisa engraçada é que como nossos testes são baseados em requisições não precisamos altera-los. O comportamento da _api_ deve ser o mesmo. Vamos rodar os testes para garantir que tudo está ok.
+Uma coisa interessante é que como nossos testes são baseados em requisições não precisamos altera-los. O comportamento da _api_ deve ser o mesmo. Vamos rodar os testes para garantir que tudo está ok.
 
 > 💁 Aqui não escrevemos os testes para o código assíncrono, mas recomendamos que o faça. Uma ferramenta popularmente utilizada é a [AnyIO](https://anyio.readthedocs.io/en/stable/) e o necessário para rodar testes assíncronos é marcar as funções como assíncronos. Leia mais detallhes [aqui](https://fastapi.tiangolo.com/pt/advanced/async-tests/).
 
@@ -278,7 +278,7 @@ Nossa caixa de ferramentas acabou de ganhar uma ferramenta nova e pode ser basta
 
 Vamos seguir para a pŕoxima técnica? Estou ansioso e você?! 🤓
 
-> 🐂 Uma api robusta deve-se preocupar com o seu tempo de resposta.
+> 🐂 Uma api robusta deve se preocupar com o seu tempo de resposta.
 
 [Circuit breaker ➡️](breaker.md)
 
