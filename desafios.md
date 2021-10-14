@@ -39,23 +39,23 @@ O código de status será `200 OK`.
 ```json
 [
   {
-  "payment_method": "magalu_card",
-  "total": 5
+    "payment_method": "magalu_card",
+    "total": 5
   },
   {
-  "payment_method": "pix",
-  "total": 3
+    "payment_method": "pix",
+    "total": 3
   },
   {
-  "payment_method": "mastercard",
-  "total": 5
+    "payment_method": "mastercard",
+    "total": 5
   }
 ]
 ```
 
 ## 🎁 O produto
 
-Dado um pedido (vários itens), enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
+Dado uma lista de itens de um pedido, enriquecer com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
 
 Nosso endpoint será `/orders/enriched`. Diferente do que vimos até agora será uma chamada utilizando o verbo `POST` com o seguinte payload:
 
@@ -64,7 +64,7 @@ Nosso endpoint será `/orders/enriched`. Diferente do que vimos até agora será
   "items": [
     "123456789",
     "987654321",
-    "123456789"
+    "444455558"
   ]
 }
 ```
@@ -75,7 +75,7 @@ O retorno deve ser um JSON com o seguinte formato:
 
 ```json
 {
-  "items": [
+  "items": {
     "123456789": {
         "name": "Produto 1",
         "description": "Descrição do produto 1",
@@ -85,15 +85,10 @@ O retorno deve ser um JSON com o seguinte formato:
         "name": "Produto 2",
         "description": "Descrição do produto 2",
         "gtin": "7890000000001"
-    },
-    "123456789": {
-        "name": "Produto 3",
-        "description": "Descrição do produto 3",
-        "gtin": "7890000000002"
     }
-  ],
+  },
   "missing": [
-    "987654321"
+    "444455558"
   ]
 }
 ```
