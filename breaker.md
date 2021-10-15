@@ -8,7 +8,7 @@ Se tudo foi implementado até o momento (incluindo os desafios), nós temos inte
 
 E como saber se não é apenas uma instabilidade? E se é uma falha de rede? 
 
-Você talvez já tenha ouvido falar em [retentativas](https://docs.microsoft.com/pt-br/azure/architecture/patterns/retry) em cenários de integração, mas essas retentativas podem denegrir ainda mais o sistema ao qual estamos integrando.
+Você talvez já tenha ouvido falar em [retentativas](https://docs.microsoft.com/pt-br/azure/architecture/patterns/retry) em cenários de integração, mas essas retentativas podem degradar ainda mais o sistema ao qual estamos integrando.
 
 🙀 E agora? O que podemos fazer?
 
@@ -18,7 +18,7 @@ O que vamos falar aqui se aplica a integrações com sistemas de terceiros ou si
 
 ## 🔌 Circuit breaker
 
-A tradução seria, "disjuntor", e seu papel um circuito na eletrônica é abrir o circuito que apresenta falha evitando uma sobrecarga de seus componentes. Esse termo também é utilizado na bolsa de valores para quando há uma falha (uma forte queda por exemplo), assim a bolsa de valores não pode ser utilizada, evitando assim maiores perdas.
+A tradução seria, "disjuntor", e seu papel na eletrônica é abrir o circuito que apresenta falha evitando uma sobrecarga de seus componentes. Esse termo também é utilizado na bolsa de valores para quando há uma grande instabilidade (uma forte queda por exemplo), assim a bolsa de valores interrompe as negociações temporariamente, evitando maiores perdas nesses momentos.
 
 Notaram uma semelhança na utilização do conceito? Temos uma falha e uma "abertura" do circuito para evitar maiores danos.
 
