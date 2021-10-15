@@ -22,7 +22,7 @@ Para garantir o acompanhamento do tutorial, verifique se as ferramentas apresent
 
 #### O que é?
 
-Python é uma linguagem de programação com foco em legibilidade e produtividade, criada para escrever código bom e fácil de manter de maneira rápida.
+Python é uma linguagem de programação com foco em legibilidade e produtividade, criada para escrever código bom e de fácil manutenção de uma maneira rápida.
 
 #### Para que serve?
 
@@ -106,7 +106,7 @@ Poetry version 1.1.11
 
 **Para que serve?**
 
-Com certeza você já escreveu um arquivo, mais tarde trocou algumas coisas e no fim salvou com o nome `versao_final.doc`. Mais tarde ou no outro dia você decide fazer mais mudanças e chama de `agoravai.doc` e quando menos percebe já tem um monte de arquivos e talvez nem se lembre mais qual a ultima versão.
+Com certeza você já escreveu um arquivo, mais tarde trocou algumas coisas e no fim salvou com o nome `versao_final.doc`. Mais tarde ou no outro dia você decide fazer mais mudanças e chama de `agoravai.doc` e quando menos percebe já tem um monte de arquivos e talvez nem se lembre mais qual a última versão.
 
 É para gerenciar alterações feitas no projeto durante o tempo que serve esta ferramenta. Durante o curso vamos salvando cada progresso feito sem precisar de ter várias cópias do mesmo arquivo.
 
