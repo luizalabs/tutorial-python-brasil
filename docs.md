@@ -12,7 +12,7 @@ Por sorte o FastAPI já tem um [`Swagger`](https://fastapi.tiangolo.com/tutorial
 
 Mas onde está essa documentação? Preciso dar algum comando especial?
 
-Até agora vinhamos testando nossa aplicação manualmente utilizando a ferramenta `httpie`, mas que tal se tivessemos uma interface mais amigável para testar nossa aplicação?
+Até agora estávamos testando nossa aplicação manualmente utilizando a ferramenta `httpie`, mas que tal se tivessemos uma interface mais amigável para testar nossa aplicação?
 
 Se a sua aplicação não estiver no ar, suba-a através do comando:
 
