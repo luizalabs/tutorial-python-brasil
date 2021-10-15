@@ -98,7 +98,7 @@ Assim evitamos um conflito com a ferramenta `flake8`.
 
 #### O que é?
 
-Flake8 é um programa de linha de comando que verifica seu código e busca por erros ou formatações que não seguem o guia de estilo padrão do python, conhecido como PEP-8 . Além disso também verifica a complexidade ciclamática do seu código.
+Flake8 é um programa de linha de comando que verifica seu código e busca por erros ou formatações que não seguem o guia de estilo padrão do python, conhecido como PEP-8 . Além disso também verifica a complexidade ciclomática do seu código.
 
 #### Para que serve?
 
