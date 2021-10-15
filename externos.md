@@ -132,7 +132,7 @@ class PedidoNaoEncontradoError(Exception):
 
 Ainda não estamos utilizando nosso dublê, isso porque não temos uma função que retorne os itens  de um pedido a ser substituida.
 
-Vamos declara-la e avisar ao endpoint para utiliza-la:
+Vamos declará-la e avisar ao endpoint para utilizá-la:
 
 > api_pedidos/api.py
 ```python
@@ -153,7 +153,7 @@ def listar_itens(itens: list[Item] = Depends(recuperar_itens_por_pedido)):
 
 Estamos utilizando aqui uma técnica de [injeção de dependência](https://fastapi.tiangolo.com/tutorial/dependencies/). Esta técnica vai nos permitir mudar o recuperador de itens para um dublê nos testes e também nos permite no futuro mudar a tecnologia/maneira utilizada para recuperar os itens de um pedido sem precisar modificar todos os lugares que dependem da função de recuperação de itens.
 
-A simples definição da função já é suficiente para que possamos modifica-la posteriormente nos testes.
+A simples definição da função já é suficiente para que possamos modificá-la posteriormente nos testes.
 
 Vamos voltar ao nosso teste, substituir a nossa dependência e rodar novamente.
 
