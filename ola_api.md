@@ -38,7 +38,7 @@ Agora vamos escrever nosso primeiro teste!
 
 > ℹ️ O código está escrito em português para ajudar na didática.
 
-Para indicar a integridade do nosso sitema, vamos ter um _endpoint_ `/healthcheck`, que ao receber um requisição, deve retornar o código de status `200 OK` e este será nosso primeiro teste.
+Para indicar a integridade do nosso sistema, vamos ter um _endpoint_ `/healthcheck`, que ao receber um requisição, deve retornar o código de status `200 OK` e este será nosso primeiro teste.
 
 Traduzindo em um teste automatizado, vamos escrever o seguinte código no arquivo `tests/test_api.py`.
 
