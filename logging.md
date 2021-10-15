@@ -116,10 +116,10 @@ Exemplo de uma configuração:
 #### Usando os logs
 
 Após configurado, irá usar uma chamada parecida com esta para chamar o log em seu arquivo python:
-> LOGGER = logging.getLogger(__name__)
+> logger = logging.getLogger(__name__)
 
 E registrar um log:
-> LOGGER.debug("Hello world!")
+> logger.debug("Hello world!")
 
 ## Level dos logs
 
