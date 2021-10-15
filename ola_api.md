@@ -174,7 +174,7 @@ Normalmente, queremos que testes falhem, porém este teste pode ser útil como d
 
 Vamos deixa-lo e vamos seguir em frente, mas agora tentando escrever um teste que realmente falhe.
 
-Quando verificar integrade o retorno deve possuir o seguinte formato:
+Quando verificar integridade o retorno deve possuir o seguinte formato:
 ```json
 {
     "status": "ok"
