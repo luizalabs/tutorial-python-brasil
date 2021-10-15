@@ -478,7 +478,7 @@ Embora a fixture seja um pouco mais complexa, os testes ficam mais simples e gar
 
 ## 🔗 Integrando a API do Magalu
 
-Vamos iniciar um pouquinho diferente dessa vez, vamos parar a programação guida por testes e explorar a solução. Depois fica como exercício do leitor escrever estes testes.
+Vamos iniciar um pouquinho diferente dessa vez, vamos parar a programação guiada por testes e explorar a solução. Depois fica como exercício do leitor escrever estes testes.
 
 > 💁 Uma dica muito importante é a utilização de marcas nestes testes indicando que eles são lentos.
 > Visto a dificuldade de simular a falha de conexão com o servidor, normalmente os testes deste tipo se resumem a caminhos felizes ou críticos.
