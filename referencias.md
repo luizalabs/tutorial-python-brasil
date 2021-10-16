@@ -2,6 +2,10 @@
 
 ## 📽️ Vídeos
 
+https://www.youtube.com/c/ArjanCodes
+
+https://www.youtube.com/c/Dunossauro
+
 https://www.youtube.com/c/ContinuousDelivery
 
 https://www.youtube.com/c/EximiaCo
@@ -22,6 +26,8 @@ https://fastapi.tiangolo.com/tutorial/
 ## 📝 Artigos
 
 https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+
+https://wssilva-willian.medium.com/design-de-api-rest-9807a5b16c9f
 
 
 Obrigado [Jesus](https://github.com/jesus-luizalabs) por este easter egg!
