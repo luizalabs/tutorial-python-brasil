@@ -1,4 +1,4 @@
-# :pager: Logging
+# 📟 Logging
 
 #### O que é?
 
@@ -177,4 +177,4 @@ async def healthcheck():
     return {"status": "ok"}
 ```
 
-[↩️ Voltar ao README ](README.md)
+[↩️ Voltar](avancadas.md#log)

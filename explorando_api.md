@@ -8,11 +8,17 @@ A API do Marketplace da Magalu oferece acesso programático a uma variedade de f
 
 * Atender e responder a chamados abertos sobre suas vendas e os produtos vendidos.
 
+Acesse a página para desenvolvedores: https://alpha.dev.magalu.com/
 
-TODO: instrucoes de como se cadastrar e avisar que utilizaremos apikey.
-todo lugar que tiver <apikey> substitua pela sua chave
+![Página principal do portal do desenvolvedor do Magalu](imgs/magalu_dev.png)
+
+> ⚠️ O portal do desenvolvedor ainda está em alpha e seu uso é restrito. Durante o tutorial vamos liberar o acesso ao portal para que você possa testar a API.
+
+Após estar autorizado, vamos precisar de uma chave para acessar a API. Podemos obter o valor desta chave clicando em [painel](https://alpha.dev.magalu.com/dashboard).
 
 Com a chave de acesso (APIKEY) em mãos, vamos explorar alguns endpoints.
+
+> Lugares onde encontrar `<APIKEY>`, substitua pelo valor que você obteve no painel.
 
 Primeiro vamos verificar se sua conta está ativa. Utilize o seguinte comando:
 
