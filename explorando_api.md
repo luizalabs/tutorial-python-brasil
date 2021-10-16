@@ -8,7 +8,6 @@ A API do Marketplace da Magalu oferece acesso programático a uma variedade de f
 
 * Atender e responder a chamados abertos sobre suas vendas e os produtos vendidos.
 
-
 TODO: instrucoes de como se cadastrar e avisar que utilizaremos apikey.
 todo lugar que tiver <apikey> substitua pela sua chave
 
