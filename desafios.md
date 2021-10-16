@@ -14,7 +14,7 @@ Relembrando, ainda temos as seguintes tarefas a serem feitas.
 
 - [ ] Exibir um relatório com o total de métodos de pagamento utilizados nos últimos 30 pedidos;
 
-- [ ] Dado um pedido (vários itens), enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também o nome, descrição e identificação do produto.
+- [ ] Dado um pedido (vários itens), enriquecer a informação com as informações de gtin (global trade item number). Deve ser retornado também a marca, descrição e identificação do produto.
 
 - [x] Como será consumido por terceiros deve apresentar boa documentação;
 
@@ -93,6 +93,8 @@ O retorno deve ser um JSON com o seguinte formato:
 }
 ```
 Caso algum produto não seja encontrado, deve ser adicionado a chave `"missing"`. 
+
+> Para a realização deste desafio durante o tutorial, um caminho de acesso a api será disponibilizado, porém caso esteja acompanhando este tutorial posteriormente, uma cópia da api está disponível [aqui](./fake-catalog).
 
 ## 🏁 Concluindo (ou quase)
 

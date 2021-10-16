@@ -56,7 +56,7 @@ async def recupera_produto(codigo):
     print(f"Recuperando produto de código {codigo}")
     try:
         async with httpx.AsyncClient() as cliente:
-            resposta = await cliente.get(f"http://localhost:8000/")
+            resposta = await cliente.get(f"http://localhost:8000/catalogs/{codigo}")
             resposta.raise_for_status()
             print(resposta.json())
     except httpx.HTTPStatusError as e:
@@ -64,22 +64,23 @@ async def recupera_produto(codigo):
 
 
 async def main():
+    codigo_produtos = ["155568600", "jj2a97g940", "cb9a1801k9", "224722100", "702915400"] * 20
     await asyncio.gather(
-        *(recupera_produto(i) for i in range(100)), return_exceptions=True
+        *(recupera_produto(codigo) for codigo in codigo_produtos), return_exceptions=True
     )
 
 
 asyncio.run(main())
 ```
 
-> Durante o tutorial, um caminho de acesso a api será disponibilizado, porém caso esteja acompanhando este tutorial posteriormente, uma cópia da api está disponível [aqui]().
+> Durante o tutorial, um caminho de acesso a api será disponibilizado, porém caso esteja acompanhando este tutorial posteriormente, uma cópia da api está disponível [aqui](./fake-catalog).
 
 
 Este código simula o que chamamos de estado de circuito fechado, as chamadas a api externa estão sendo feitas e respondendo normalmente.
 
 Agora vamos introduzir um pouco de caos e ver o que acontece.
 
-> Se estiver acompanhando o tutorial posteriormente, modifique a variável de ambiente `PORCENTAGEM_FALHA` para 70% e execute o código novamente.
+> Se estiver acompanhando o tutorial posteriormente, modifique a variável de ambiente `FAIL_RATE` para 70 (valor expresso em porcentagem) e execute o código novamente.
 
 Rode novamente nosso código (talvez seja necessário rodar algumas vezes) e veja o que acontece: `python exemplo_circuito_breaker.py`.
 
@@ -155,7 +156,7 @@ rule = PercentageFailuresRule(
     # a visualização da solução do problema
     max_failures_percentage=50,
     failure_cache_key="my_cb",
-    min_accepted_requests=1,
+    min_accepted_requests=10,
     request_cache_key="my_cb_request",
 )
 
@@ -193,14 +194,15 @@ def with_circuit_breaker(func):
 async def recupera_produto(codigo):
     print(f"Recuperando produto de código {codigo}")
     async with httpx.AsyncClient() as cliente:
-        resposta = await cliente.get(f"http://localhost:8000/")
+        resposta = await cliente.get(f"http://localhost:8000/catalogs/{codigo}")
         resposta.raise_for_status()
         print(resposta.json())
 
 
 async def main():
+    codigo_produtos = ["155568600", "jj2a97g940", "cb9a1801k9", "224722100", "702915400"] * 20
     await asyncio.gather(
-        *(recupera_produto(i) for i in range(100)), return_exceptions=True
+        *(recupera_produto(codigo) for codigo in codigo_produtos), return_exceptions=True
     )
 
 
