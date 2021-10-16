@@ -48,6 +48,7 @@ Sempre! Mas depende do tipo de log. Isso mesmo que você leu, depende do tipo ou
 ### Dicas / Links / Ferramentas
 - https://docs.python.org/3/library/logging.html
 - https://www.geeksforgeeks.org/logging-in-python/
+- [Logging](logging.md)
 
 
 ## 📄 Paginação
