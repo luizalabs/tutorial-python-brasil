@@ -546,6 +546,8 @@ def recuperar_itens_por_pedido(identificacao_do_pedido: UUID) -> list[Item]:
         raise FalhaDeComunicacaoError() from exc
 ```
 
+> 💁 Uma ferramenta muito interessante para testar nosso código sem precisar fazer as chamadas reais a todo momento é o [vcrpy](https://github.com/kevin1024/vcrpy). Ele grava as respostas das requisições uma única vez e depois faz a simulação das chamadas.
+
 Leia o código e entenda o que está acontecendo.
 
 Uma coisa interessante apareceu durante o desenvolvimento deste código. Erros de comunicação com o servidor remoto precisam ser tratados.
