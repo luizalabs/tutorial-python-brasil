@@ -66,7 +66,7 @@ async def recupera_produto(codigo):
 async def main():
     codigo_produtos = ["155568600", "jj2a97g940", "cb9a1801k9", "224722100", "702915400"] * 20
     await asyncio.gather(
-        *(recupera_produto(codigo) for codigo in codigo_produtos), return_exceptions=True
+        *(recupera_produto(codigo) for codigo in codigo_produtos),
     )
 
 
@@ -202,7 +202,7 @@ async def recupera_produto(codigo):
 async def main():
     codigo_produtos = ["155568600", "jj2a97g940", "cb9a1801k9", "224722100", "702915400"] * 20
     await asyncio.gather(
-        *(recupera_produto(codigo) for codigo in codigo_produtos), return_exceptions=True
+        *(recupera_produto(codigo) for codigo in codigo_produtos),
     )
 
 
