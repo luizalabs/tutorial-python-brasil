@@ -91,7 +91,7 @@ Antes da melhoria, a documentação era assim:
 > api_pedidos/esquema.py
 ```python
 # ...
-class HealthCheckSchema(BaseModel):
+class HealthCheckResponse(BaseModel):
     status: str
 ```
 
