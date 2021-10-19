@@ -23,7 +23,7 @@ Relembrando, ainda temos as seguintes tarefas a serem feitas.
 - [x] O sistema deve apresentar testes.
 
 
-> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização prévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
 > Se não lembra os endpoints disponíveis, volte na [página](./explorando_api.md) onde exploramos a API.
 
 

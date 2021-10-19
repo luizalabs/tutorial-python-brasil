@@ -73,7 +73,7 @@ async def main():
 asyncio.run(main())
 ```
 
-> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização prévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
 > As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
 
 Este código simula o que chamamos de estado de circuito fechado, as chamadas a api externa estão sendo feitas e respondendo normalmente.
