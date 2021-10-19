@@ -14,7 +14,7 @@ Nossa próxima tarefa será:
 
 Mas antes disto, precisamos conhecer a API que iremos integrar. [Vamos explorar a API do Magalu](explorando_api.md).
 
-> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização prévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
 > As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
 > Lembre-se de trocar "https://alpha.dev.magalu.com/" por "http://localhost:8080"
 > A APIKEY utilizada no acesso simulado é "5734143a-595d-405d-9c97-6c198537108f".
