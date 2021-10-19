@@ -153,6 +153,7 @@ async def recuperar_itens_por_pedido(
         except httpx.HTTPStatusError as exc:
             if exc.response.status_code == HTTPStatus.NOT_FOUND:
                 raise PedidoNaoEncontradoError() from exc
+            raise exc
         except httpx.HTTPError as exc:
             # aqui poderiam ser tratados outros erros como autenticação
             raise FalhaDeComunicacaoError() from exc
