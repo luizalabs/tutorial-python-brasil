@@ -8,6 +8,12 @@ A API do Marketplace da Magalu oferece acesso programático a uma variedade de f
 
 * Atender e responder a chamados abertos sobre suas vendas e os produtos vendidos.
 
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
+> Lembre-se de trocar "https://alpha.dev.magalu.com/" por "http://localhost:8080"
+> A APIKEY utilizada no acesso simulado é "5734143a-595d-405d-9c97-6c198537108f".
+>  Não deixe de explorar a API como demonstrado acima, mesmo que seja sua versão simulada.
+
 Acesse a página para desenvolvedores: https://alpha.dev.magalu.com/
 
 ![Página principal do portal do desenvolvedor do Magalu](imgs/magalu_dev.png)

@@ -1,0 +1,20 @@
+[
+    {
+        "details": [
+            {
+                "description": "Specified resource ID does not exist",
+                "field": "uuid",
+                "issue": "INVALID_RESOURCE_ID",
+                "location": "query_param",
+                "value": "{value}"
+            }
+        ],
+        "error_code": "RESOURCE_NOT_FOUND",
+        "links": [
+            {
+                "href": "https://alpha.dev.magalu.com/guides/error-messages#no_records_found"
+            }
+        ],
+        "message": "The specified resource does not found"
+    }
+]

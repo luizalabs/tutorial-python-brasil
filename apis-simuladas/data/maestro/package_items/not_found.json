@@ -1,0 +1,17 @@
+[
+    {
+        "details": [
+            {
+                "description": "Records not found. Please check the input parameters and try again",
+                "issue": "NO_RECORDS_FOUND"
+            }
+        ],
+        "error_code": "RESOURCE_NOT_FOUND",
+        "links": [
+            {
+                "href": "https://alpha.dev.magalu.com/guides/error-messages#no_records_found"
+            }
+        ],
+        "message": "The specified resource does not found"
+    }
+]

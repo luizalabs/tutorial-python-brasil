@@ -1,10 +1,10 @@
-# Fake Catalog
+# APIs Simuladas
 
-Projeto auxiliar para tutorial da pybr 2021
+Simulação das apis para tutorial da pybr 2021
 
 ## Dependencias
 
-- python 3.6+
+- python 3.7+
 - poetry
 
 
@@ -24,5 +24,5 @@ poetry install
 ## Execução
 
 ```bash
-poetry run uvicorn main:app
+poetry run uvicorn main:app --port 8080
 ```
