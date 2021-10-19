@@ -73,14 +73,14 @@ async def main():
 asyncio.run(main())
 ```
 
-> Durante o tutorial, um caminho de acesso a api será disponibilizado, porém caso esteja acompanhando este tutorial posteriormente, uma cópia da api está disponível [aqui](./fake-catalog).
-
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
 
 Este código simula o que chamamos de estado de circuito fechado, as chamadas a api externa estão sendo feitas e respondendo normalmente.
 
 Agora vamos introduzir um pouco de caos e ver o que acontece.
 
-> Se estiver acompanhando o tutorial posteriormente, modifique a variável de ambiente `FAIL_RATE` para 70 (valor expresso em porcentagem) e execute o código novamente.
+> Se estiver acompanhando o tutorial posteriormente, modifique a variável de ambiente `FAIL_RATE` para 70 (valor expresso em porcentagem) e execute o código da api simulada novamente.
 
 Rode novamente nosso código (talvez seja necessário rodar algumas vezes) e veja o que acontece: `python exemplo_circuito_breaker.py`.
 

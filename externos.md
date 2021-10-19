@@ -14,6 +14,12 @@ Nossa próxima tarefa será:
 
 Mas antes disto, precisamos conhecer a API que iremos integrar. [Vamos explorar a API do Magalu](explorando_api.md).
 
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
+> Lembre-se de trocar "https://alpha.dev.magalu.com/" por "http://localhost:8080"
+> A APIKEY utilizada no acesso simulado é "5734143a-595d-405d-9c97-6c198537108f".
+>  Não deixe de explorar a API como demonstrado acima, mesmo que seja sua versão simulada.
+
 ## 📄 Definindo um esquema de entrada de dados e resposta
 
 Nosso cliente deseja obter os itens de um pedido, vamos assumir então que ele possui a identificação do mesmo.
@@ -477,6 +483,12 @@ class TestListarPedidos:
 Embora a fixture seja um pouco mais complexa, os testes ficam mais simples e garantimos que a sobrescrita não propague entre os testes.
 
 ## 🔗 Integrando a API do Magalu
+
+
+> ⚠️ Como as APIs abertas do Magalu se encontram em alpha, uma autorização pévia é necessária. Por isso, você pode utilizar uma versão simulada da mesma.
+> As instruções de instalação e execução se encontram no readme do [projeto](./apis-simuladas).
+> Lembre-se de trocar "https://alpha.dev.magalu.com/" por "http://localhost:8080"
+> A APIKEY utilizada no acesso simulado é "5734143a-595d-405d-9c97-6c198537108f".
 
 Vamos iniciar um pouquinho diferente dessa vez, vamos parar a programação guiada por testes e explorar a solução. Depois fica como exercício do leitor escrever estes testes.
 
