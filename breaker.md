@@ -12,7 +12,7 @@ Você talvez já tenha ouvido falar em [retentativas](https://docs.microsoft.com
 
 🙀 E agora? O que podemos fazer?
 
-E se puxassemos o plug que liga nosso sistema ao sistema externo temporariomente?
+E se puxássemos o plug que liga nosso sistema ao sistema externo temporariamente?
 
 O que vamos falar aqui se aplica a integrações com sistemas de terceiros ou sistemas distribuídos internos.
 
@@ -22,7 +22,7 @@ A tradução seria, "disjuntor", e seu papel na eletrônica é abrir o circuito 
 
 Notaram uma semelhança na utilização do conceito? Temos uma falha e uma "abertura" do circuito para evitar maiores danos.
 
-Assim funciona o _circuit breaker_ na computação. quando falamos em abrir um circuito, estamos falando na verdade em interromper a comunicação entre sistemas (temporariamente).
+Assim funciona o _circuit breaker_ na computação. Quando falamos em abrir um circuito, estamos falando na verdade em interromper a comunicação entre sistemas (temporariamente).
 
 Nygard em seu livro [Release It](https://www.amazon.com.br/Release-It-Nygard-Dahl/dp/8573500862) explica bem o circuit breaker.
 
@@ -218,13 +218,13 @@ Eu decidi criar um decorador para introduzir o circuit breaker. Ao perceber que 
 
 Que tal adicionar _circuit breaker_ em nosso sistema?
 
-🗣️ Quais seriam os pontos onde deveriamos adicionar o circuit breaker? Em caso de falha o que faremos, retornaremos o valor em cache? Vamos adicionar algum recurso para isto como o `Redis`?
+🗣️ Quais seriam os pontos onde deveríamos adicionar o circuit breaker? Em caso de falha o que faremos, retornaremos o valor em cache? Vamos adicionar algum recurso para isto como o `Redis`?
 
 Será que esta técnica é mesmo necessária no nosso projeto?
 
 Reflita sobre estes questionamentos.
 
-Estas discussões são importantes e todas elas tem um "trade off", ou seja, podem ter algum custo.
+Estas discussões são importantes e todas elas têm um "trade off", ou seja, podem ter algum custo.
 
 ## 💾 Salvando a versão atual do código
 

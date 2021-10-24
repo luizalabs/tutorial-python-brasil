@@ -24,7 +24,7 @@ Se a primeira requisição demorar 1 segundo, as demais também e se um pedido t
 
 ## 🧑‍🏫 Demonstração e Solução
 
-Vamos fazer uma simulação utilizando código para visualisar melhor este cenário.
+Vamos fazer uma simulação utilizando código para visualizar melhor este cenário.
 
 Crie um arquivo de exemplo como visto abaixo e execute-o para ver na prática o que estamos falando.
 
@@ -41,8 +41,8 @@ for pacote in range(10):  # simula o a iteração sobre os pacotes
 ```
 E como podemos fazer para melhorar?!?!
 
-Seria legal se pudessemos fazer várias requisições ao mesmo tempo, isto podia poupar um tempo.
-Não ficariamos ociosos enquanto aguardamos a api do Magalu responder.
+Seria legal se pudéssemos fazer várias requisições ao mesmo tempo, isto podia poupar um tempo.
+Não ficaríamos ociosos enquanto aguardamos a api do Magalu responder.
 
 E na verdade podemos! Podemos pedir os itens dos pacotes ao mesmo tempo e  aguardar enquanto eles chegam.
 
@@ -75,7 +75,7 @@ A primeira mudança é adição de um cliente assíncrono e mudança de nossa fu
 
 Um detalhe que precisamos ficar atento aqui é que toda função assíncrona é aguardada com a expressão `await` e que a palavra reservada `await` sempre estará presente em uma função assíncrona.
 
-A unica função que não esperamos utilizando `await` é a função `main`, que é passada para a função `run`, que por baixo dos panos cria um loop de eventos necessário para executar funções assíncronas e aguarda a execução da mesma.
+A única função que não esperamos utilizando `await` é a função `main`, que é passada para a função `run`, que por baixo dos panos cria um loop de eventos necessário para executar funções assíncronas e aguarda a execução da mesma.
 
 > ⚡ Ficou interessado em ler mais sobre chamadas assíncronas em Python?? A documentação do [Python](https://docs.python.org/pt-br/3/library/asyncio.html) ou do [FastAPI](https://fastapi.tiangolo.com/pt/async/) podem te ajudar.
 
@@ -83,7 +83,7 @@ A unica função que não esperamos utilizando `await` é a função `main`, que
 
 Para nossa sorte os frameworks escolhidos (httpx e fastapi) já são compatíveis com chamadas assíncronas, e não precisaremos de grandes modificações no código.
 
-Mesmo assim, ao invés de modificar nossas funções feitas até agora, vamos criar uma nova `recuperar_itens_por_pedido` porém dessa vez assíncrona. Criaremos um novo arquivo com nome `magalu_api_async` com o conteúdo apresentado abaixo.
+Mesmo assim, ao invés de modificar nossas funções feitas até agora, vamos criar uma nova `recuperar_itens_por_pedido` porém dessa vez assíncrona. Criaremos um arquivo com nome `magalu_api_async` com o conteúdo apresentado abaixo.
 
 O código será bem similar ao que já vimos no exemplo acima.
 
@@ -159,11 +159,11 @@ async def recuperar_itens_por_pedido(
             raise FalhaDeComunicacaoError() from exc
 ```
 
-As mudanças foram explicadas no exemplo anterior, mas repare que como cada requisição retorna uma lista dos itens, precisamos agrupa-los em uma única lista. É como se tivessemos uma lista de listas `[[1, 2, 3], [4, 5, 6]]` e vamos transformar em `[1, 2, 3 ,4, 5, 6]`. Isto é feito no comando `list(chain.from_iterable(itens))`.
+As mudanças foram explicadas no exemplo anterior, mas repare que como cada requisição retorna uma lista dos itens, precisamos agrupa-los em uma única lista. É como se tivéssemos uma lista de listas `[[1, 2, 3], [4, 5, 6]]` e vamos transformar em `[1, 2, 3 ,4, 5, 6]`. Isto é feito no comando `list(chain.from_iterable(itens))`.
 
 E o código da _api_, o que precisamos modificar?
 
-Pode parecer estranho mas não precisamos mudar muita coisa.
+Pode parecer estranho, mas não precisamos mudar muita coisa.
 
 > api_produtos/api.py
 ```python
@@ -210,7 +210,7 @@ async def listar_itens(itens: list[Item] = Depends(recuperar_itens_por_pedido)):
 # ...
 ```
 
-A adição de `async` torna os nosso endpoints assíncronos embora caso eles ainda executem códigos síncronos podemos ter o bloqueio dos nossos trabalhadores.
+A adição de `async` torna os nossos endpoints assíncronos embora caso eles ainda executem códigos síncronos podemos ter o bloqueio dos nossos trabalhadores.
 
 Uma coisa interessante é que como nossos testes são baseados em requisições não precisamos altera-los. O comportamento da _api_ deve ser o mesmo. Vamos rodar os testes para garantir que tudo está ok.
 
@@ -277,7 +277,7 @@ Vamos adicionar ao versionamento os arquivos novos e avisar modificações em al
 
 Nossa caixa de ferramentas acabou de ganhar uma ferramenta nova e pode ser bastante útil em outros momentos.
 
-Vamos seguir para a pŕoxima técnica? Estou ansioso e você?! 🤓
+Vamos seguir para a próxima técnica? Estou ansioso e você?! 🤓
 
 > 🐂 Uma api robusta deve se preocupar com o seu tempo de resposta.
 
