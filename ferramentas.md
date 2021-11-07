@@ -81,7 +81,7 @@ O poetry nos ajuda a ter um ambiente separado para cada projeto.
 Abra um terminal e digite:
 
 ```
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 ```
 
 Existem [outras](https://python-poetry.org/docs/#alternative-installation-methods-not-recommended) opções de instalação mas esta é a mais recomendada.
