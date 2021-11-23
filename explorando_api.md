@@ -53,19 +53,19 @@ http https://alpha.api.magalu.com/maestro/v1/orders X-API-KEY:<APIKEY> X-TENANT-
 Podemos verificar também um pedido em específico.
 
 ```
-http https://alpha.api.magalu.com/maestro/v1/orders/13bdb3e3-8fad-4f9b-a6c3-2fa99786289f X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+http https://alpha.api.magalu.com/maestro/v1/orders/0b529f98-3a4a-4d2b-8970-96ef0f0e1c2e X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
 ```
 
 Assim como podemos consultar uma lista de produtos a partir de um pedido e seu respectivo pacote.
 
 ```
-http  https://alpha.api.magalu.com/maestro/v1/orders/efb77dcf-d83c-4935-81ac-7be5f37e6cdc/packages/e3ae3598-8034-4374-8eed-bdca8c31d5a0 X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+http  https://alpha.api.magalu.com/maestro/v1/orders/0b529f98-3a4a-4d2b-8970-96ef0f0e1c2e/packages/0ebc7451-322a-4329-a7c3-9d01189f4503 X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
 ```
 
 ou ainda mais específico:
 
 ```
-http  https://alpha.api.magalu.com/maestro/v1/orders/efb77dcf-d83c-4935-81ac-7be5f37e6cdc/packages/e3ae3598-8034-4374-8eed-bdca8c31d5a0/items X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
+http  https://alpha.api.magalu.com/maestro/v1/orders/0b529f98-3a4a-4d2b-8970-96ef0f0e1c2e/packages/0ebc7451-322a-4329-a7c3-9d01189f4503/items X-API-KEY:<APIKEY> X-TENANT-ID:21fea73c-e244-497a-8540-be0d3c583596
 ```
 
 Dado estes endpoints, parece que precisamos fazer uma primeira consulta para obter os pacotes de um pedido e em seguida realizar a requisição para obter os itens de um pedido.
